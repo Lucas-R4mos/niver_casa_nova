@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidas do Arraiá</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <img src="banner.png" alt="Banner - Página das comidas." class="topo" />
+        </header>
+        <main>
+            <section class="tabela-comidas" aria-labelledby="comidas-titulo">
+                <table>
+                    <caption>Contribuições já registradas para a festa</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Prato</th>
+                            <th scope="col">Quem vai trazer?</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaCorpo"></tbody>
+                </table>
+            </section>
+            <section class="form-section" aria-labelledby="formulario-titulo">
+                <h1 id="formulario-titulo">Contribua com um prato</h1>
+                <form id="comidaForm" aria-describedby="mensagem">
+                    <label for="prato">Prato:</label>
+                    <input type="text" id="prato" name="prato" placeholder="Exemplo: Canjica" required />
+                    <label for="quem">Quem vai trazer?</label>
+                    <input type="text" id="quem" name="quem" placeholder="Exemplo: Lucas Ramos" required />
+                    <button type="submit">Adicionar</button>
+                </form>
+                <p id="mensagem" role="status" aria-labelledby="formulario-titulo" aria-live="polite" tabindex="-1"></p>
+            </section>
+            <section class="info-section" id="nav-section">
+                <nav class="botoes" tabindex="-1">
+                    <ul>
+                        <li><a href="index.html" class="btn btn-roxo">VOLTAR PARA A PÁGINA INICIAL</a></li>
+                        <li><a href="presentes.html" class="btn btn-amarelo">CHÁ DE CASA NOVA</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </main>
+
+        <footer>
+            Lucas Ramos, 2025
+        </footer>
+    <script src="comidas.js"></script>
+</body>
+
+</html>

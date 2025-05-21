@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arraiá de Aniversário e Casa Nova - Página Inicial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="banner.png"
+            alt="Descrição do banner: A imagem contém bandeiras e um balão de São João, um girassol amarelo e o texto Arraiá de Aniversário e Casa Nova"
+            class="topo" />
+    </header>
+    <main>
+        <section class="info-section form-section">
+            <p>Venha comemorar com a gente o aniversário de 30 anos do Lucas e a casa nova do Lucas e da Larissa!</p>
+            <p><strong>8 de junho, às 15:00 na Rua Hil de Moraes, 12, Edson Queiroz, Salão de Festas C.</strong></p>
+            <p>Vai ser uma festa Brega, à la Falcão, então confirmem a presença abaixo e venham bonitos, lindos e
+                joiados!</p>
+        </section>
+        <section class="form-section">
+            <h1>Confirme sua presença</h1>
+            <form id="confirmForm">
+                <label for="nome">Nome do convidado ou convidados:</label>
+                <input type="text" id="nome" name="nome" aria-required="true"
+                    placeholder="Exemplo: Lucas Ramos e Larissa Solange">
+                <button type="submit">CONFIRMAR PRESENÇA</button>
+            </form>
+            <div id="mensagem" aria-live="assertive" tabindex="-1"></div>
+        </section>
+        <section class="info-section form-section">
+            <p id="nav-message" tabindex="-1"></p>
+            <p>Para contribuir com algum prato para a festa e para nosso Chá de Casa nova, clique nos botões abaixo.</p>
+        </section>
+        <section class="info-section" id="nav-section">
+            <nav class="botoes">
+                <ul>
+                    <li><a href="comida.html" class="btn btn-roxo">CONTRIBUIR COM UM PRATO</a></li>
+                    <li><a href="presentes.html" class="btn btn-amarelo">CHÁ DE CASA NOVA</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p>Lucas Ramos, 2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

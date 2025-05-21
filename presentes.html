@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Casa Nova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="banner.png" alt="Banner - Página do Chá de Casa Nova." class="topo" />
+    </header>
+    <main>
+        <section class="lista-presentes form-section" aria-labelledby="titulo-presentes">
+            <h1 id="titulo-presentes">Escolha um presente para contribuir</h1>
+            <ul id="presentes"></ul>
+        </section>
+
+        <section class="form-section" aria-labelledby="titulo-reserva">
+            <h1 id="titulo-reserva">Reservar presente</h1>
+            <form id="formReserva">
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" name="nome" required />
+
+                <label for="presenteSelecionado">Presente:</label>
+                <select id="presenteSelecionado" name="presenteSelecionado" required></select>
+
+                <button type="submit">Reservar</button>
+            </form>
+            <p id="mensagem"></p>
+        </section>
+        <section class="chave-pix form-section" aria-labelledby="pix-titulo">
+            <p>Se quiser contribuir com qualquer valor no pix, é só escolher uma das opções abaixo.</p>
+            <ul id="pix-list">
+                <li>
+                    <button>
+                        <code id="chave-pix">Chave Pix</code>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <code id="pix-copia-cola">Pix Copia e Cola</code>
+                    </button>
+                </li>
+            </ul>
+            <p id="feedback-pix"></p>
+        </section>
+        <section class="info-section" id="nav-section">
+            <nav class="botoes" tabindex="-1">
+                <ul>
+                    <li><a href="comida.html" class="btn btn-roxo">CONTRIBUIR COM UM PRATO</a></li>
+                    <li><a href="index.html" class="btn btn-amarelo">VOLTAR PARA A PÁGINA INICIAL</a></li>
+                </ul>
+            </nav>
+            <section class="info-section" id="nav-section">
+    </main>
+    <footer>
+        <p>Lucas Ramos, 2025</p>
+    </footer>
+</body>
+<script src="presentes.js"></script>
+
+</html>
